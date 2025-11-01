@@ -1,7 +1,7 @@
 backend:
   # Use the GitHub backend so edits in the CMS write back to your repo
   name: github
-  repo: YOURUSER/YOURREPO
+ repo: wirelessskd/hugog-blog
   branch: main
 media_folder: static/uploads
 public_folder: /uploads
