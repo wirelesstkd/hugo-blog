@@ -1,0 +1,48 @@
+baseURL: "https://example.com/"
+languageCode: "en-us"
+title: "My Cool Blog"
+# Use the PaperMod theme for a modern, responsive blog layout
+theme: "PaperMod"
+
+# Enable search and feed outputs on the homepage
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# Basic site parameters for PaperMod
+params:
+  # Text shown on the home page; customize as desired
+  homeInfoParams:
+    Title: "Welcome to My Blog"
+    Content: "A space to share posts written in Markdown."
+  # Show estimated reading time on posts
+  ShowReadingTime: true
+  # Add copy buttons to code blocks
+  ShowCodeCopyButtons: true
+  # Display navigation links to previous/next posts
+  ShowPostNavLinks: true
+  # Automatically switch between light and dark mode based on browser settings
+  defaultTheme: "auto"
+  # Social icons displayed in the site header; update URLs or remove entries as needed
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/your-username"
+    - name: "twitter"
+      url: "https://twitter.com/your-handle"
+
+# Define the main navigation menu for the site
+menu:
+  main:
+    - identifier: posts
+      name: "Posts"
+      url: "/posts/"
+      weight: 1
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 2
+
+# Enable generation of robots.txt
+enableRobotsTXT: true
