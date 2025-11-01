@@ -1,0 +1,9 @@
+[build]
+  # Command Netlify uses to build the site
+  command = "hugo"
+  # Directory to publish after build
+  publish = "public"
+
+[build.environment]
+  # Pin the Hugo version to avoid build errors; update as needed
+  HUGO_VERSION = "0.128.0"
